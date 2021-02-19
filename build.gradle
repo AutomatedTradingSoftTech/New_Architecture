@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.4.21"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// gradle versions
+ext.viewModelVer = '2.3.0'
+ext.liveDataVer = '2.3.0'
+ext.coroutineVer = '1.4.2'
+ext.playCoreVer = '1.9.1'
+ext.sdpVer = '1.0.6'
+ext.volleyVer = '1.1.1'
+ext.retrofitVer = '2.9.0'
+ext.retrofitGsonVer = '2.7.2'
+ext.gsonVer = '2.8.6'
+ext.dexterVer = '4.2.0'
+ext.glideVer = '4.11.0'
+ext.glideCompilerVer = '4.9.0'
+ext.okHTTP3Ver = '4.8.0'
+ext.daggerVer = '2.28.1'
